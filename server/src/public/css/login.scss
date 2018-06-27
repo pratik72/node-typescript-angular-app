@@ -1,0 +1,115 @@
+@import "themes/default/variables";
+
+@import "lib/bootstrap/bootstrap";
+@import "lib/font-awesome/font-awesome";
+
+@import "themes/default/default";
+
+
+
+// Scaffolding
+// -------------------------
+
+// .fa.fa-user-circle , .fa.fa-lock{
+//   font-size: 30px;
+// }
+
+.card-content{
+    padding: 30px;
+  
+    .form-group{
+      width: 75%;
+  
+      input {
+        border: 0;
+        background-image: linear-gradient(#9c27b0, #9c27b0), linear-gradient(#D2D2D2, #D2D2D2);
+        background-size: 0 2px, 100% 1px;
+        background-repeat: no-repeat;
+        background-position: center bottom, center calc(100% - 1px);
+        background-color: transparent;
+        transition: background 0s ease-out;
+        float: none;
+        box-shadow: none;
+        border-radius: 0;
+        font-weight: 400;
+        height: 36px;
+        padding: 7px 0;
+        font-size: 14px;
+        line-height: 1.42857;
+      }
+  
+      input:focus{
+        outline: none;
+        background-image: linear-gradient(#c2ef92, #347507), linear-gradient(#65C109, #64BF09);
+        background-size: 100% 2px, 100% 1px;
+        box-shadow: none;
+        transition-duration: 0.3s;
+      }
+    }
+  
+    
+  
+    .input-group-addon {
+      border: 0;
+      background: transparent;
+      padding: 6px 15px 0px;
+  
+      i{
+        width: 25px;
+      }
+  
+      .fa-unlock-alt{
+        font-size: 33px;
+      }
+    }
+  }
+  
+  .col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
+  
+  .logo {
+  
+    padding: 30px;
+    text-align: center;
+    
+    .navbar-brand {
+      font-size: 28px;
+      text-transform: uppercase;
+      text-align: center;
+      text-shadow: 0px 0px 1px #8a8a8a;
+      color: #4ab2f5;
+      float: none;
+      font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    }
+  
+  }
+  
+  .card.card-signup{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 25px 0;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    border-radius: 3px;
+    color: rgba(0,0,0, 0.87);
+    background: #fff;
+  
+    .card-header{
+      background: linear-gradient(60deg, #75c9ff, #5bbeff);
+      box-shadow: 0 12px 20px -10px rgb(230, 230, 230), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(76, 175, 80, 0.2);
+      padding: 10px 10px 5px 10px;
+      margin: -20px 15px 0;
+      border-radius: 3px;
+  
+      .title {
+        color: #FFFFFF;
+        font-size: 1.3em;
+      }
+    }
+  
+    button{
+      border-radius: 3px;
+      background-color: #00bcd4;
+    }
+  }

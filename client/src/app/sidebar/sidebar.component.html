@@ -1,0 +1,31 @@
+<div class="sidebar" data-color="green" data-image="assets/img/sidebar-1.jpg">
+
+	<div class="sidebar-wrapper">
+        <ul class="nav">
+            <li [ngClass]="{ 'active': dashBody.indexOf('invoice') > -1 }">
+            	<a [routerLink]="['invoice']" routerLinkActive="active">
+                  <i class="fa fa-credit-card"></i>Payment Intimation</a>
+            </li>
+        	<li [ngClass]="{ 'active': dashBody.indexOf('purchase') > -1 }">
+        		<a [routerLink]="['purchase-order']" routerLinkActive="active">
+              <i class="fa fa-bookmark"></i>PO</a>
+        	</li>
+        	<li [ngClass]="{ 'active': dashBody.indexOf('supplier') > -1 }">
+        		<a [routerLink]="['supplier']" routerLinkActive="active">
+              <i class="fa fa-users"></i>Supplier</a>
+        	</li>
+            <li [ngClass]="{ 'active': dashBody.indexOf('finance') > -1 }" ng-show="permissions.accessPayReq || permissions.isAdmin">
+                <a [routerLink]="['finance']" routerLinkActive="active">
+                  <i class="fa fa-usd"></i>Finance</a>
+            </li>
+            <li [ngClass]="{ 'active': dashBody.indexOf('reports') > -1 }" ng-show="permissions.downloadReports || permissions.isAdmin">
+                <a [routerLink]="['reports']" routerLinkActive="active">
+                  <i class="fa fa-file"></i>Reports</a>
+            </li>
+            <li [ngClass]="{ 'active': dashBody.indexOf('track') > -1 }">
+                <a [routerLink]="['track-payments']" routerLinkActive="active">
+                  <i class="fa fa-search"></i>Track Payment</a>
+            </li>
+        </ul>
+	</div>
+</div>

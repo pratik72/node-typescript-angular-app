@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Client</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+  <div class="section section-full-screen section-signup">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+        <div class="logo login-logo">
+          <a href="#" class="simple-text">
+            <div>
+            <a class="navbar-brand" href="#">Spartapps</a>
+                <div class="clearfix"></div>
+            </div>
+          </a>
+          </div>
+          <div class="card card-signup">
+            <form class="form" action="/login" method="post">
+              
+                <div class="card-header">
+                    <h4 class="title">login</h4>                                
+                </div>
+    
+                <div class="card-content">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <i class="fa fa-user fa-2x"></i>
+                  </span>
+                  
+                  <div class="form-group is-empty">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email...">
+                    <span class="material-input"></span>
+                  </div>
+                </div>                 
+
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <i class="fa fa-unlock-alt fa-2x"></i>
+                  </span>
+                  
+                  <div class="form-group is-empty">
+                    <input type="password" placeholder="Password..." class="form-control" id="password" name="password">
+                    <span class="material-input"></span>
+                  </div>
+
+                </div>
+                <div class="footer text-center">
+                <button type="submit" class="btn btn-info btn-lg">Login</button>
+                </div>
+                </div>
+                
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
