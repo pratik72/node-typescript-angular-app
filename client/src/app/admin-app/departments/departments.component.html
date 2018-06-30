@@ -1,0 +1,15 @@
+<div class="container-fluid">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="title">Departments</h4>
+                <button class="btn btn-dark btn-sm pull-right" (click)="openModalDialog(content)">Create Departments</button>
+            </div>
+            <div class="scroll-outer">
+                <div class="card-content scroll-inner">
+                    <ng2-smart-table [settings]="settings" [source]="data"></ng2-smart-table>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

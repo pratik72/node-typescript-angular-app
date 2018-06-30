@@ -4,9 +4,11 @@
           <div class="card-header">
               <h4 class="title">Reports</h4>
           </div>
-          <div class="card-content">
-              <ng2-smart-table [settings]="settings" [source]="data"></ng2-smart-table>
-          </div>
+          <div class="scroll-outer">
+                <div class="card-content scroll-inner">
+                    <ng2-smart-table [settings]="settings" [source]="data"></ng2-smart-table>
+                </div>
+            </div>
       </div>
   </div>
 </div>

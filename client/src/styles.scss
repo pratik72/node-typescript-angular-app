@@ -13,6 +13,21 @@ $button-bg-color : #007bff;
     position: absolute;
 }
 
+.scroll-outer {
+    margin-right: 10px;
+    overflow: hidden;
+    height: 100%;
+
+    .scroll-inner {
+        overflow: hidden;
+        width: calc(100% + 10px);
+        
+        &:hover {
+            overflow: auto;
+        }
+    }
+}
+
 .middle-container{
     position: absolute;
     border-left: 250px solid transparent;
@@ -60,7 +75,6 @@ $button-bg-color : #007bff;
     .card-content {
         padding: 30px;
         height: 100%;
-        overflow: auto;
     }
 }
 
@@ -86,6 +100,32 @@ $button-bg-color : #007bff;
 
         .modal-header , .modal-footer {
             padding: 5px 10px;
+            background: #efefef;
+        }
+
+        .form {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .outer-modal-body{
+            height: 85%;
+            padding-right: 0px;
+            overflow: hidden;
+            margin-right: 10px;
+            margin-bottom: -20px;
+        }
+
+        .modal-body {
+            height: 100%;
+            padding-right: 0px;
+            margin-right: -10px;
+
+            .inner-modal-body {
+                height: 100%;
+                overflow: auto;
+                width: 100%;
+            }
         }
     }
 }

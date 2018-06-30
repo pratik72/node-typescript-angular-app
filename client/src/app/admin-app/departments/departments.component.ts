@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-reports',
-  templateUrl: './reports.component.html',
-  styleUrls: ['./reports.component.scss']
+  selector: 'app-departments',
+  templateUrl: './departments.component.html',
+  styleUrls: ['./departments.component.scss']
 })
-export class ReportsComponent implements OnInit {
+export class DepartmentsComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
   }
+
 
   // tslint:disable-next-line:member-ordering
   data = [
