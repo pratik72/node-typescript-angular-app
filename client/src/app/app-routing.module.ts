@@ -18,7 +18,7 @@ import { OrganizationsComponent } from './admin-app/organizations/organizations.
 import { RolesComponent } from './admin-app/roles/roles.component';
 import { LocationsComponent } from './admin-app/locations/locations.component';
 import { DepartmentsComponent } from './admin-app/departments/departments.component';
-
+import { GroupsComponent } from './admin-app/groups/groups.component';
 
 export const AppRoutes: Routes = [
   {
@@ -62,6 +62,10 @@ export const AppRoutes: Routes = [
       {
         path: 'users',
         component: UsersComponent
+      },
+      {
+        path: 'groups',
+        component: GroupsComponent
       },
       {
         path: 'organizations',

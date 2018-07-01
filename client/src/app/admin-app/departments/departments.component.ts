@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonApiService } from '../../services/common-api/common-api.service';
 
 @Component({
   selector: 'app-departments',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DepartmentsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private commonApi: CommonApiService) { }
 
   ngOnInit() {
   }

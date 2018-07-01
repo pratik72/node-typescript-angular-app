@@ -1,0 +1,122 @@
+<ng-template #content let-c="close" let-d="dismiss">
+  <form [formGroup]="dataForm" class="form" (ngSubmit)="submitForm(dataForm)">
+    <div class="modal-header">
+      <h5 class="modal-title">Create Organization</h5>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="outer-modal-body">
+      <div class="modal-body">
+        <div class="inner-modal-body">
+          <div class="form-group">
+            <label>Organization Name : </label>
+            <input type="text" name="orgName" formControlName="orgName" class="form-control" required>
+          </div>
+
+          <div class="form-group">
+            <label>Managing Director Name : </label>
+            <input type="text" name="ceoName" formControlName="ceoName" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>CIN : </label>
+            <input type="text" name="cinNo" formControlName="cinNo" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>PAN : </label>
+            <input type="text" name="panNo" formControlName="panNo" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Excise Registration No : </label>
+            <input type="text" name="exciseNo" formControlName="exciseNo" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>TIN : </label>
+            <input type="text" name="tinNo" formControlName="tinNo" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>CST : </label>
+            <input type="text" name="cstNo" formControlName="cstNo" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Service Tax No : </label>
+            <input type="text" name="serviceTaxNo" formControlName="serviceTaxNo" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>GST : </label>
+            <input type="text" name="gstNo" formControlName="gstNo" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Export/Import Registration No : </label>
+            <input type="text" name="exportImportNo" formControlName="exportImportNo" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Form Registration No : </label>
+            <input type="text" name="formRegistrationNo" formControlName="formRegistrationNo" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Website : </label>
+            <input type="text" name="website" formControlName="website" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Email : </label>
+            <input type="text" name="email" formControlName="email" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Organization Address 1 : </label>
+            <input type="text" name="address1" formControlName="address1" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Organization Address 2 : </label>
+            <input type="text" name="address2" formControlName="address2" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Organization City : </label>
+            <input type="text" name="city" formControlName="city" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Organization District : </label>
+            <input type="text" name="district" formControlName="district" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Organization State : </label>
+            <input type="text" name="state" formControlName="state" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Organization Country : </label>
+            <input type="text" name="country" formControlName="country" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label>Organization Status : </label>
+            <input type="text" name="status" formControlName="status" class="form-control">
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="submit" [disabled]="dataForm.invalid" class="btn btn-primary btn-sm">Submit</button>
+      <button type="button" class="btn btn-default btn-sm" (click)="c('Close click')">Close</button>
+    </div>
+  </form>
+
+</ng-template>

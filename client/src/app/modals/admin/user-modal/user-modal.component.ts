@@ -2,14 +2,14 @@ import { FormGroup, FormControl, FormArray, NgForm } from '@angular/forms';
 import { Component, OnInit, ElementRef, ViewChild} from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
-import { CreateUsers } from '../../classes/create-users';
+import { CreateUsers } from '../../../classes/create-users';
 
 @Component({
-  selector: 'app-adm-user-modal',
-  templateUrl: './adm-user-modal.component.html',
-  styleUrls: ['./adm-user-modal.component.scss']
+  selector: 'app-user-modal',
+  templateUrl: './user-modal.component.html',
+  styleUrls: ['./user-modal.component.scss']
 })
-export class AdmUserModalComponent implements OnInit {
+export class UserModalComponent implements OnInit {
 
   userForm: FormGroup;
 
@@ -33,9 +33,6 @@ export class AdmUserModalComponent implements OnInit {
   }
 
   openUserModal() {
-    setInterval(() => {
-
-    }, 200);
     this.modalService.open(this.content, { size: 'lg'}).result.then((result) => {
 
     }, (reason) => {

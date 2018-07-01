@@ -106,6 +106,10 @@ $button-bg-color : #007bff;
         .form {
             height: 100%;
             overflow: hidden;
+
+            .form-control.ng-invalid{
+                border: 1px solid red;
+            }
         }
 
         .outer-modal-body{

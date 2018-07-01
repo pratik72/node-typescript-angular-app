@@ -1,25 +1,15 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-
-import { CommonApiService } from '../../services/common-api/common-api.service';
-
-import { OrganizationModalComponent } from '../../modals/admin/organization-modal/organization-modal.component';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-organizations',
-  templateUrl: './organizations.component.html',
-  styleUrls: ['./organizations.component.scss']
+  selector: 'app-groups',
+  templateUrl: './groups.component.html',
+  styleUrls: ['./groups.component.scss']
 })
-export class OrganizationsComponent implements OnInit {
+export class GroupsComponent implements OnInit {
 
-  @ViewChild(OrganizationModalComponent) orgModal;
-
-  constructor( private commonApi: CommonApiService) { }
+  constructor() { }
 
   ngOnInit() {
-  }
-
-  openModalDialog() {
-    this.orgModal.openModal();
   }
 
   // tslint:disable-next-line:member-ordering

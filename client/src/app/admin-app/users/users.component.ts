@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+
+import { UserModalComponent } from '../../modals/admin/user-modal/user-modal.component';
 
 @Component({
   selector: 'app-users',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
 
+  @ViewChild(UserModalComponent) userModal;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  openUserDialog() {
+    this.userModal.openUserModal();
   }
 
   // tslint:disable-next-line:member-ordering
