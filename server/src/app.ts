@@ -25,6 +25,8 @@ import * as userController from "./controllers/user";
 import * as apiController from "./controllers/api";
 import * as contactController from "./controllers/contact";
 
+import * as adminController from "./controllers/admin/admin-controller";
+
 
 // API keys and Passport configuration
 import * as passportConfig from "./config/passport";
@@ -97,6 +99,8 @@ app.get("/dashboard/*", homeController.index);
 
 app.get("/admin", homeController.index);
 app.get("/admin/*", homeController.index);
+
+app.post("/adminController/*", adminController.index);
 
 app.get("/logout", userController.logout);
 app.get("/forgot", userController.getForgot);

@@ -3,6 +3,7 @@ import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
 import { CommonApiService } from '../../../services/common-api/common-api.service';
+import { AdminApiConstants } from '../../../common/admin-api-constants.enum';
 
 @Component({
   selector: 'app-organization-modal',
@@ -40,11 +41,13 @@ export class OrganizationModalComponent implements OnInit {
       country : new FormControl(),
       status : new FormControl(),
     });
+
+    console.log(AdminApiConstants.CREATE_ORGANIZATION);
   }
 
   submitForm({ formData, valid }) {
 
-    const orgApi = this.commonApi.postData( '/' , formData );
+    const orgApi = this.commonApi.postData( AdminApiConstants.CREATE_ORGANIZATION , formData );
     orgApi.subscribe( (data) => {
       console.log('-----', data);
     });

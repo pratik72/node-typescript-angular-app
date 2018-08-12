@@ -13,6 +13,7 @@ export class OrganizationsComponent implements OnInit {
 
   @ViewChild(OrganizationModalComponent) orgModal;
 
+
   constructor( private commonApi: CommonApiService) { }
 
   ngOnInit() {
